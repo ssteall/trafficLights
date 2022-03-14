@@ -25,7 +25,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START"/>
                                 <connections>
-                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zA-6j-ukS"/>
+                                    <action selector="nextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQY-T1-x47"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zp2-tT-LND">

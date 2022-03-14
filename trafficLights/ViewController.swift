@@ -33,7 +33,9 @@ class ViewController: UIViewController {
         YellowLight.alpha = 0.3
     }
 
-    @IBAction func PressButton(_ sender: Any) {
+    
+    
+    @IBAction func nextButtonPressed() {
         PressStartButton.setTitle("Next", for: .normal)
         
         switch  nextColor {
@@ -51,6 +53,5 @@ class ViewController: UIViewController {
             nextColor = .red
         }
     }
-    
 }
 
