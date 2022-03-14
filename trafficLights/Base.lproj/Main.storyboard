@@ -66,10 +66,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="GreenLight" destination="lqi-cD-UsQ" id="rfv-WS-BwO"/>
-                        <outlet property="PressStartButton" destination="7m3-2v-lGF" id="tRF-nz-qGc"/>
-                        <outlet property="RedLight" destination="Lth-Ol-bbt" id="7cR-gx-ORV"/>
-                        <outlet property="YellowLight" destination="dje-WL-dPB" id="mlp-9J-wdJ"/>
+                        <outlet property="greenLight" destination="lqi-cD-UsQ" id="rfv-WS-BwO"/>
+                        <outlet property="pressStartButton" destination="7m3-2v-lGF" id="tRF-nz-qGc"/>
+                        <outlet property="redLight" destination="Lth-Ol-bbt" id="7cR-gx-ORV"/>
+                        <outlet property="yellowLight" destination="dje-WL-dPB" id="mlp-9J-wdJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -7,49 +7,49 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+enum Colors {
+    case red
+    case yellow
+    case green
+}
 
-    enum Colors {
-        case red
-        case yellow
-        case green
-    }
+class ViewController: UIViewController {
     
-    @IBOutlet var PressStartButton: UIButton!
-    @IBOutlet var RedLight: UIView!
-    @IBOutlet var YellowLight: UIView!
-    @IBOutlet var GreenLight: UIView!
+    @IBOutlet var pressStartButton: UIButton!
+    @IBOutlet var redLight: UIView!
+    @IBOutlet var yellowLight: UIView!
+    @IBOutlet var greenLight: UIView!
     
-    var nextColor = Colors.red
+    private var nextColor = Colors.red
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        RedLight.layer.cornerRadius = RedLight.layer.bounds.width / 2
-        YellowLight.layer.cornerRadius = RedLight.layer.bounds.width / 2
-        GreenLight.layer.cornerRadius = RedLight.layer.bounds.width / 2
+        redLight.layer.cornerRadius = redLight.layer.bounds.width / 2
+        yellowLight.layer.cornerRadius = redLight.layer.bounds.width / 2
+        greenLight.layer.cornerRadius = redLight.layer.bounds.width / 2
         
-        RedLight.alpha = 0.3
-        GreenLight.alpha = 0.3
-        YellowLight.alpha = 0.3
+        redLight.alpha = 0.3
+        greenLight.alpha = 0.3
+        yellowLight.alpha = 0.3
     }
-
-    
     
     @IBAction func nextButtonPressed() {
-        PressStartButton.setTitle("Next", for: .normal)
+        if pressStartButton.currentTitle == "START" {
+            pressStartButton.setTitle("Next", for: .normal)
+        }
         
         switch  nextColor {
         case .red:
-            RedLight.alpha = 1
-            GreenLight.alpha = 0.3
+            redLight.alpha = 1
+            greenLight.alpha = 0.3
             nextColor = .yellow
         case .yellow:
-            RedLight.alpha = 0.3
-            YellowLight.alpha = 1
+            redLight.alpha = 0.3
+            yellowLight.alpha = 1
             nextColor = .green
         case .green:
-            GreenLight.alpha = 1
-            YellowLight.alpha = 0.3
+            greenLight.alpha = 1
+            yellowLight.alpha = 0.3
             nextColor = .red
         }
     }
