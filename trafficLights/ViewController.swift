@@ -9,18 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    enum Colors {
+        case red
+        case yellow
+        case green
+    }
+    
     @IBOutlet var PressStartButton: UIButton!
     @IBOutlet var RedLight: UIView!
     @IBOutlet var YellowLight: UIView!
     @IBOutlet var GreenLight: UIView!
     
     var nextColor = Colors.red
-    
-    enum Colors {
-        case red
-        case yellow
-        case green
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
