@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,56 +14,59 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-2v-lGF">
-                                <rect key="frame" x="87.666666666666686" y="699" width="200" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-2v-lGF">
+                                <rect key="frame" x="107" y="783" width="200" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="AsX-1I-8rw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="fVe-9N-Kj6"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START"/>
                                 <connections>
                                     <action selector="nextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQY-T1-x47"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zp2-tT-LND">
-                                <rect key="frame" x="121" y="87.999999999999972" width="133" height="498.33333333333326"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lth-Ol-bbt">
-                                        <rect key="frame" x="0.0" y="0.0" width="133" height="132.66666666666666"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Lth-Ol-bbt" secondAttribute="height" multiplier="1:1" id="jeo-ov-SOr"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dje-WL-dPB">
-                                        <rect key="frame" x="0.0" y="182.66666666666669" width="133" height="133"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="dje-WL-dPB" secondAttribute="height" multiplier="1:1" id="SPw-ak-tOn"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-cD-UsQ">
-                                        <rect key="frame" x="0.0" y="365.66666666666669" width="133" height="132.66666666666669"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="lqi-cD-UsQ" secondAttribute="height" multiplier="1:1" id="FJM-Ft-cbf"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lth-Ol-bbt">
+                                <rect key="frame" x="133.5" y="69" width="147" height="151.5"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lth-Ol-bbt" secondAttribute="height" multiplier="38:39" id="52o-AH-9uo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-cD-UsQ">
+                                <rect key="frame" x="133.5" y="471" width="147" height="151"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lqi-cD-UsQ" secondAttribute="height" multiplier="38:39" id="cgf-fy-Ox2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dje-WL-dPB">
+                                <rect key="frame" x="133.5" y="270.5" width="147" height="150.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dje-WL-dPB" secondAttribute="height" multiplier="38:39" id="XqF-hg-Qvc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="zp2-tT-LND" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1WD-4D-xRO"/>
+                            <constraint firstItem="dje-WL-dPB" firstAttribute="top" secondItem="Lth-Ol-bbt" secondAttribute="bottom" constant="50" id="0xT-x8-Afq"/>
+                            <constraint firstItem="Lth-Ol-bbt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="2S3-MZ-fUe"/>
+                            <constraint firstItem="lqi-cD-UsQ" firstAttribute="top" secondItem="dje-WL-dPB" secondAttribute="bottom" constant="50" id="2lV-Tc-chv"/>
                             <constraint firstItem="7m3-2v-lGF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4ck-fK-0N5"/>
+                            <constraint firstItem="dje-WL-dPB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.167969" id="5RC-Tp-mHq"/>
+                            <constraint firstItem="dje-WL-dPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Zg-HS-PzL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7m3-2v-lGF" secondAttribute="bottom" constant="29" id="DxH-Ra-psk"/>
-                            <constraint firstItem="zp2-tT-LND" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="b1I-Jh-Y2a"/>
-                            <constraint firstItem="zp2-tT-LND" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.613839" id="wyo-NV-ZaD"/>
+                            <constraint firstItem="lqi-cD-UsQ" firstAttribute="top" secondItem="dje-WL-dPB" secondAttribute="bottom" constant="50" id="H6h-oS-Y8H"/>
+                            <constraint firstItem="lqi-cD-UsQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UHd-Zg-cSg"/>
+                            <constraint firstItem="Lth-Ol-bbt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VWq-i0-bqm"/>
+                            <constraint firstItem="lqi-cD-UsQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.168826" id="j0h-eu-hh5"/>
+                            <constraint firstItem="Lth-Ol-bbt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.168826" id="ssf-1N-d2V"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,6 +82,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
